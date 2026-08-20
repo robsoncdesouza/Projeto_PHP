@@ -27,6 +27,8 @@ form {
  background-color: white;
  padding: 20px;
  border-radius: 6px;
+ align-items: center;
+ justify-content: center;
 }
 form label {
  display: block;
