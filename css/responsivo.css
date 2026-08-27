@@ -1,0 +1,150 @@
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 15px 20px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+        margin: 0 0 12px;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 14px;
+    }
+
+    header nav a {
+        margin-right: 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    form {
+        max-width: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        max-width: 100%;
+    }
+
+    .btn {
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    table td:last-child {
+        white-space: normal;
+        min-width: 88px;
+    }
+
+    table td:last-child .editar,
+    table td:last-child .excluir {
+        display: block;
+        width: 100%;
+        margin: 6px 0 0;
+        text-align: center;
+        overflow-wrap: anywhere;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 12px 15px;
+    }
+
+    header h1 {
+        font-size: 1.35rem;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    table th,
+    table td {
+        padding: 7px 6px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Mobile L, M e S */
+@media (max-width: 425px) {
+    main {
+        padding: 14px;
+    }
+
+    h2 {
+        font-size: 1.35rem;
+    }
+
+    table th,
+    table td {
+        padding: 6px 5px;
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        padding: 11px 12px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    form {
+        padding: 12px;
+    }
+
+    table td:last-child {
+        min-width: 78px;
+    }
+}
+
+@media (max-width: 320px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    table th,
+    table td {
+        padding: 5px 4px;
+        font-size: 0.9rem;
+    }
+
+    table td:last-child {
+        min-width: 72px;
+    }
+}
