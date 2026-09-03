@@ -7,7 +7,7 @@ $resultado = mysqli_query($conexao, $sql);
 <?php require __DIR__ . '/../cabecalho.php'; ?>
 <main>
  <h2>Produtos cadastrados</h2>
- <a href="cadastrar.php" class = "btn cadastrar">Cadastrar novo produto</a>
+ <a href="cadastrar.php" class = "btn cadastrar">Cadastrar novo produto +</a>
  <table>
  <tr>
  <th>Produto</th>
