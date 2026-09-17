@@ -93,3 +93,8 @@ table th {
 .editar{
     background-color: rgb(224, 201, 30);
 }
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
