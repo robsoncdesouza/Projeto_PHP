@@ -8,6 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $sql = "DELETE FROM produtos WHERE id = '$id'";
     mysqli_query($conexao, $sql);
 
+    $_SESSION['mensagem'] = "Produto excluído com sucesso!";
     header('Location: listar.php');
     exit;
 } else {
@@ -23,7 +24,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <main>
     <h2>Excluir Produto</h2>
     <p>Tem certeza que deseja excluir o produto
-       <strong><?php echo $produto['nome']; ?></strong>?</p>
+        <strong><?php echo $produto['nome']; ?></strong>?
+    </p>
 
     <form action="excluir.php" method="POST">
         <input type="hidden" name="id" value="<?php echo $produto['id']; ?>">
